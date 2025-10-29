@@ -3,17 +3,27 @@ import re
 import textwrap
 import zipfile
 from collections import defaultdict
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 ZIP_PATH = "output/CabanaClub/extract2025-10-29T11-41-17.zip"
-STRUCTURED_DATA_FILENAME = "structuredData.json"
+# Clamp generated column widths so very long values wrap while tiny columns stay readable.
 MAX_COL_WIDTH = 36
 MIN_COL_WIDTH = 3
+OUTPUT_MODE = "json"  # Options: "pretty", "json", "both"
+JSON_OUTPUT_PATH = Path("tables.json")
+JSON_SAMPLE_OUTPUT_PATH = Path("tables_sample.json")
+SAMPLE_MAX_ROWS = 6
+SAMPLE_MAX_COLS = 6
 
 
-def load_structured_data(zip_path: str, member: str) -> Dict:
-    """Load a structuredData.json payload from the extraction zip."""
+def load_structured_data(zip_path: str) -> Dict:
+    """Load the first JSON payload contained in the extraction zip."""
     with zipfile.ZipFile(zip_path, "r") as archive:
+        json_members = [name for name in archive.namelist() if name.lower().endswith(".json")]
+        if not json_members:
+            raise ValueError("No JSON members found in the provided zip file.")
+        member = sorted(json_members)[0]
         return json.loads(archive.read(member))
 
 
@@ -270,13 +280,73 @@ def print_tables(tables: List[Dict]) -> None:
         print()
 
 
+def export_tables_to_json(tables: List[Dict], output_path: Path) -> None:
+    """Write all tables to a single JSON file."""
+    payload = {"tables": []}
+    for idx, table in enumerate(tables, start=1):
+        title = table.get("title") or f"Table {idx}"
+        rows, header_rows = assemble_rows(table)
+        payload["tables"].append(
+            {
+                "table_index": idx,
+                "table_id": table.get("id"),
+                "title": title,
+                "page": table.get("page"),
+                "attributes": table.get("attributes", {}),
+                "header_row_count": header_rows,
+                "rows": rows,
+            }
+        )
+    output_path.write_text(json.dumps(payload, indent=2))
+
+
+def truncate_rows(rows: List[List[str]], max_rows: int, max_cols: int) -> List[List[str]]:
+    """Return a truncated snapshot of the table rows."""
+    preview = []
+    for row in rows[:max_rows]:
+        preview.append(row[:max_cols])
+    return preview
+
+
+def export_tables_sample_json(tables: List[Dict], output_path: Path) -> None:
+    """Write a sample JSON containing truncated copies of each table."""
+    payload = {"tables": []}
+    for idx, table in enumerate(tables, start=1):
+        title = table.get("title") or f"Table {idx}"
+        rows, header_rows = assemble_rows(table)
+        preview_rows = truncate_rows(rows, SAMPLE_MAX_ROWS, SAMPLE_MAX_COLS)
+        payload["tables"].append(
+            {
+                "table_index": idx,
+                "table_id": table.get("id"),
+                "title": title,
+                "page": table.get("page"),
+                "attributes": table.get("attributes", {}),
+                "header_row_count": min(header_rows, len(preview_rows)),
+                "rows": preview_rows,
+                "truncated": {
+                    "original_row_count": len(rows),
+                    "original_column_count": max((len(r) for r in rows), default=0),
+                    "included_rows": len(preview_rows),
+                    "included_columns": max((len(r) for r in preview_rows), default=0),
+                },
+            }
+        )
+    output_path.write_text(json.dumps(payload, indent=2))
+
+
 def main() -> None:
-    data = load_structured_data(ZIP_PATH, STRUCTURED_DATA_FILENAME)
+    data = load_structured_data(ZIP_PATH)
     tables = extract_tables(data["elements"])
     if not tables:
         print("No tables found in the structured data.")
         return
-    print_tables(tables)
+    mode = OUTPUT_MODE.lower()
+    if mode in {"pretty", "both"}:
+        print_tables(tables)
+    if mode in {"json", "both"}:
+        export_tables_to_json(tables, JSON_OUTPUT_PATH)
+        export_tables_sample_json(tables, JSON_SAMPLE_OUTPUT_PATH)
 
 
 if __name__ == "__main__":
