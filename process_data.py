@@ -1,16 +1,12 @@
+import argparse
 import json
 import re
+import sys
 import textwrap
 import zipfile
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-
-ZIP_PATH = "output/CabanaClub/extract2025-10-29T11-41-17.zip"
-OUTPUT_MODE = "pretty"  # Options: "pretty", "json", "both"
-JSON_OUTPUT_PATH = Path("tables.json")
-JSON_SAMPLE_OUTPUT_PATH = Path("tables_sample.json")
-
 
 def load_structured_data(zip_path: str) -> Dict:
     """Load the first JSON payload contained in the extraction zip."""
@@ -222,15 +218,16 @@ def wrap_cell(text: str, width: int) -> List[str]:
     return lines
 
 
-def render_table(rows: List[List[str]], header_rows: int) -> None:
+def render_table(rows: List[List[str]], header_rows: int, out=None) -> None:
     """Pretty-print a table as an ASCII grid."""
+    stream = out or sys.stdout
     if not rows:
-        print("  (no textual data)")
+        print("  (no textual data)", file=stream)
         return
 
     widths = compute_column_widths(rows)
     if not widths:
-        print("  (no textual data)")
+        print("  (no textual data)", file=stream)
         return
 
     border = "+" + "+".join("-" * (width + 2) for width in widths) + "+"
@@ -249,34 +246,36 @@ def render_table(rows: List[List[str]], header_rows: int) -> None:
                 lines = wrapped[col_idx]
                 fragment = lines[line_index] if line_index < len(lines) else ""
                 pieces.append(f" {fragment.ljust(width)} ")
-            print("|" + "|".join(pieces) + "|")
+            print("|" + "|".join(pieces) + "|", file=stream)
 
-    print(border)
+    print(border, file=stream)
     for idx, row in enumerate(rows):
         emit_row(row)
         is_last = idx == len(rows) - 1
         if header_rows and idx == header_rows - 1:
-            print(header_border if not is_last else border)
+            print(header_border if not is_last else border, file=stream)
         else:
-            print(border)
+            print(border, file=stream)
 
 
-def print_tables(tables: List[Dict]) -> None:
+def print_tables(tables: List[Dict], out=None) -> None:
     """Print each table with its inferred title."""
+    stream = out or sys.stdout
     for idx, table in enumerate(tables, start=1):
         title = table.get("title") or f"Table {idx}"
         page = table.get("page")
         header = f"Table {idx}: {title}"
         if page is not None:
             header += f" (Page {page})"
-        print(header)
+        print(header, file=stream)
         rows, header_rows = assemble_rows(table)
-        render_table(rows, header_rows)
-        print()
+        render_table(rows, header_rows, out=stream)
+        print(file=stream)
 
 
 def export_tables_to_json(tables: List[Dict], output_path: Path) -> None:
     """Write all tables to a single JSON file."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     payload = {"tables": []}
     for idx, table in enumerate(tables, start=1):
         title = table.get("title") or f"Table {idx}"
@@ -295,16 +294,9 @@ def export_tables_to_json(tables: List[Dict], output_path: Path) -> None:
     output_path.write_text(json.dumps(payload, indent=2))
 
 
-def truncate_rows(rows: List[List[str]], max_rows: int, max_cols: int) -> List[List[str]]:
-    """Return a truncated snapshot of the table rows."""
-    preview = []
-    for row in rows[:max_rows]:
-        preview.append(row[:max_cols])
-    return preview
-
-
 def export_tables_sample_json(tables: List[Dict], output_path: Path) -> None:
     """Write a sample JSON containing truncated copies of each table."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     payload = {"tables": []}
     for idx, table in enumerate(tables, start=1):
         title = table.get("title") or f"Table {idx}"
@@ -337,18 +329,44 @@ def export_tables_sample_json(tables: List[Dict], output_path: Path) -> None:
     output_path.write_text(json.dumps(payload, indent=2))
 
 
+def write_tables_text(tables: List[Dict], output_path: Path) -> None:
+    """Persist the pretty-printed tables to a text file."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as handle:
+        print_tables(tables, out=handle)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Render and export tables from Adobe PDF extract output.")
+    parser.add_argument(
+        "directory",
+        help="Directory containing extract.zip; outputs will be written here too.",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
-    data = load_structured_data(ZIP_PATH)
+    args = parse_args()
+    base_dir = Path(args.directory)
+    zip_path = base_dir / "extract.zip"
+    json_output_path = base_dir / "tables.json"
+    sample_output_path = base_dir / "sample_tables.json"
+    text_output_path = base_dir / "tables.txt"
+
+    if not zip_path.exists():
+        raise FileNotFoundError(f"Expected extract.zip at {zip_path}. Run extract.py or adjust the directory.")
+
+    if text_output_path.exists():
+        text_output_path.unlink()
+
+    data = load_structured_data(zip_path)
     tables = extract_tables(data["elements"])
     if not tables:
-        print("No tables found in the structured data.")
+        print("done")
         return
-    mode = OUTPUT_MODE.lower()
-    if mode in {"pretty", "both"}:
-        print_tables(tables)
-    if mode in {"json", "both"}:
-        export_tables_to_json(tables, JSON_OUTPUT_PATH)
-        export_tables_sample_json(tables, JSON_SAMPLE_OUTPUT_PATH)
+    export_tables_to_json(tables, json_output_path)
+    export_tables_sample_json(tables, sample_output_path)
+    print("done")
 
 
 if __name__ == "__main__":
