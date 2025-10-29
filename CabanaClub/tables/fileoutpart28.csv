@@ -1,0 +1,27 @@
+﻿ed  Description  ,Year 11 2031  ,Year 12 2032  ,Year 13 2033  ,Year 14 2034  ,Year 15 2035  ,Year 16 2036  ,Year 17 2037  ,Year 18 2038  ,Year 19 2039  ,Year 20 2040  
+Roofs  
+"Roof, Modified Membrane-Bldg 1  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Roof, Modified Membrane-Bldg 2  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Roof Coating-Flat Sections at AC Units  ,0  ,0  ,"8,840  ",0  ,0  ,"9,659  ",0  ,0  ,"10,555  ",0  
+"Roof, Modified Membrane-Fitness Center  ",0  ,0  ,"11,869  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Roof, Pre-Patina Copper Standing Seam-Bldg 1  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Roof, Pre-Patina Copper Standing Seam-Bldg 2  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Roofs Total  ,0  ,0  ,"20,709  ",0  ,0  ,"9,659  ",0  ,0  ,"10,555  ",0  
+,,,,,,,,,,
+Painting/Waterproofing  
+Paint Exterior and Waterproof-Bldg 1  ,0  ,"279,754  ",0  ,0  ,0  ,0  ,0  ,0  ,"344,062  ",0  
+Paint Exterior and Waterproof-Bldg 2  ,0  ,"99,111  ",0  ,0  ,0  ,0  ,0  ,0  ,"121,894  ",0  
+Paint Fire Sprinkler Piping-Garages  ,"34,001  ",0  ,"36,072  ",0  ,"38,269  ",0  ,"40,599  ",0  ,"43,072  ",0  
+Paint Interior-Bldg 1 Garage  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"72,495  "
+Paint Interior-Bldg 1 Lobby/Corridor/Office  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"6,344  ",0  ,0  
+Paint Interior-Bldg 2 Garage  ,0  ,"31,572  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Paint Interior-Bldg 2 Lobby  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"1,873  ",0  ,0  
+Paint Interior-Fitness Center  ,0  ,"2,227  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Paint Interior-Stairwells  ,0  ,0  ,"14,748  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+Waterproof/Seal Brick-Elevator Towers  ,0  ,"46,095  ",0  ,0  ,0  ,0  ,0  ,0  ,"56,691  ",0  
+Painting/Waterproofing Total  ,"34,001  ","458,759  ","50,820  ",0  ,"38,269  ",0  ,"40,599  ","8,217  ","565,719  ","72,495  "
+,,,,,,,,,,
+Paving  
+"Asphalt Overlay, 1"" w/Milling Allowance  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Asphalt Sealcoating  ,0  ,0  ,0  ,"5,757  ",0  ,0  ,0  ,"6,479  ",0  ,0  
+Paving Total  ,0  ,0  ,0  ,"5,757  ",0  ,0  ,0  ,"6,479  ",0  ,0  

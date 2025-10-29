@@ -1,0 +1,89 @@
+﻿ed  Description  ,Year 1 2021  ,Year 2 2022  ,Year 3 2023  ,Year 4 2024  ,Year 5 2025  ,Year 6 2026  ,Year 7 2027  ,Year 8 2028  ,Year 9 2029  ,Year 10 2030  
+General Reserve Fund  ,,,,,,,,,"1,219,798 "
+Beginning Year Balance  ,"400,000  ","572,974  ","821,569  ","945,560  ","1,285,330  ","825,294  ","1,138,384  ",,,Highest  
+,,,,,,,,"1,443,684  ",,"1,612,417  "
+Annual Reserve Contribution  ,,"375,093  ","386,346  ","397,936  ","409,874  ","422,170  ","434,835  ","447,880  ","461,316  ","475,150 "
+"364,168  "
+
+Planned Special Assessments  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Reserve Funds Available  ,"764,168  ","948,067  ","1,207,915  ","1,343,496  ","1,695,204  ","1,247,464  ","1,573,219  ","1,891,564  ","1,681,114  ","2,087,567  "
+Expenditures  
+Roofs  ,"6,200  ",0  ,"42,872  ","6,775  ",0  ,0  ,"7,403  ",0  ,0  ,"1,549,121  "
+Painting/Waterproofing  ,"25,300  ","25,149  ","37,815  ",0  ,"374,005  ",0  ,"30,210  ","6,113  ","32,049  ","53,943  "
+Paving  ,0  ,"4,038  ",0  ,0  ,0  ,"4,544  ",0  ,0  ,"51,561  ","5,115  "
+Elevators  ,0  ,0  ,0  ,0  ,0  ,0  ,"98,352  ","520,864  ",0  ,"133,479  "
+Mechanical & Electrical  ,"10,532  ","53,348  ","8,780  ","55,328  ","506,479  ","86,884  ","4,522  ",0  ,"18,137  ","139,596  "
+Misc Building Components  ,"108,152  ",0  ,"172,135  ",0  ,0  ,"25,206  ","6,546  ","123,666  ",0  ,"94,236  "
+Misc Site Improvements  ,"41,700  ","41,609  ","10,516  ","18,169  ",0  ,"11,909  ",0  ,"53,770  ","7,601  ","6,705  "
+"Furniture, Fixtures & Equipment  ","4,983  ","12,497  ","4,211  ",0  ,"5,608  ","5,587  ","17,714  ",0  ,"6,313  ","8,285  "
+Total Expenditures  ,"196,867  ","136,641  ","276,329  ","80,272  ","886,092  ","134,130  ","164,747  ","704,413  ","115,661  ","1,990,480  "
+Earned Interest  ,"5,673  ","10,143  ","13,974  ","22,106  ","16,182  ","25,050  ","35,212  ","32,647  ","46,964  ","2,913  "
+Ending Year Balance  ,"572,974  ","821,569  ","945,560  ","1,285,330  ","825,294  ","1,138,384  ","1,443,684  ","1,219,798  ","1,612,417  ","100,000  "
+Pooled Cash Flow Plan Variables:  
+Annual Reserve Contribution % Change  ,100.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  
+     Inflation Rate  ,0.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  ,3.00%  
+     Interest Rate  ,1.00%  ,1.25%  ,1.50%  ,1.75%  ,2.00%  ,2.25%  ,2.50%  ,2.75%  ,3.00%  ,3.00%  
+(Minimum Plan Balance:  $100000)  ,,,,,,,,,,
+ed  Description  ,Year 1 2021  ,Year 2 2022  ,Year 3 2023  ,Year 4 2024  ,Year 5 2025  ,Year 6 2026  ,Year 7 2027  ,Year 8 2028  ,Year 9 2029  ,Year 10 2030  
+Roofs  
+"Roof, Modified Membrane-Bldg 1  ",0  ,0  ,"29,824  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Roof, Modified Membrane-Bldg 2  ",0  ,0  ,"13,048  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+Roof Coating-Flat Sections at AC Units  ,"6,200  ",0  ,0  ,"6,775  ",0  ,0  ,"7,403  ",0  ,0  ,"8,090  "
+"Roof, Modified Membrane-Fitness Center  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Roof, Pre-Patina Copper Standing Seam-Bldg 1  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"1,036,621  "
+"Roof, Pre-Patina Copper Standing Seam-Bldg 2  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"504,410  "
+Roofs Total  ,"6,200  ",0  ,"42,872  ","6,775  ",0  ,0  ,"7,403  ",0  ,0  ,"1,549,121  "
+,,,,,,,,,,
+Painting/Waterproofing  
+Paint Exterior and Waterproof-Bldg 1  ,0  ,0  ,0  ,0  ,"227,465  ",0  ,0  ,0  ,0  ,0  
+Paint Exterior and Waterproof-Bldg 2  ,0  ,0  ,0  ,0  ,"80,586  ",0  ,0  ,0  ,0  ,0  
+Paint Fire Sprinkler Piping-Garages  ,"25,300  ",0  ,"26,841  ",0  ,"28,475  ",0  ,"30,210  ",0  ,"32,049  ",0  
+Paint Interior-Bldg 1 Garage  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"53,943  "
+Paint Interior-Bldg 1 Lobby/Corridor/Office  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"4,720  ",0  ,0  
+Paint Interior-Bldg 2 Garage  ,0  ,"23,492  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Paint Interior-Bldg 2 Lobby  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"1,393  ",0  ,0  
+Paint Interior-Fitness Center  ,0  ,"1,657  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Paint Interior-Stairwells  ,0  ,0  ,"10,974  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+Waterproof/Seal Brick-Elevator Towers  ,0  ,0  ,0  ,0  ,"37,479  ",0  ,0  ,0  ,0  ,0  
+Painting/Waterproofing Total  ,"25,300  ","25,149  ","37,815  ",0  ,"374,005  ",0  ,"30,210  ","6,113  ","32,049  ","53,943  "
+,,,,,,,,,,
+Paving  
+"Asphalt Overlay, 1"" w/Milling Allowance  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"51,561  ",0  
+Asphalt Sealcoating  ,0  ,"4,038  ",0  ,0  ,0  ,"4,544  ",0  ,0  ,0  ,"5,115  "
+Paving Total  ,0  ,"4,038  ",0  ,0  ,0  ,"4,544  ",0  ,0  ,"51,561  ","5,115  "
+ed  Description  ,Year 1 2021  ,Year 2 2022  ,Year 3 2023  ,Year 4 2024  ,Year 5 2025  ,Year 6 2026  ,Year 7 2027  ,Year 8 2028  ,Year 9 2029  ,Year 10 2030  
+,,,,,,,,,,
+Elevators  
+Elevator Cab Refurbishment Allowance-Bldg 1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"34,185  "
+Elevator Cab Refurbishment Allowance-Bldg 2  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"17,093  "
+Elevator Door Operator Equipment-Bldg 1  ,0  ,0  ,0  ,0  ,0  ,0  ,"65,568  ",0  ,0  ,0  
+Elevator Door Operator Equipment-Bldg 2  ,0  ,0  ,0  ,0  ,0  ,0  ,"32,784  ",0  ,0  ,0  
+Elevator Capital Repair/Deferred Maint Allowance  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"82,201  "
+"Elevator Modernization Allowance, 9 Stop/2500#-Bldg 1  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,"347,243  ",0  ,0  
+"Elevator Modernization Allowance, 9 Stop/2500#-Bldg 2  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,"173,621  ",0  ,0  
+Elevators Total  ,0  ,0  ,0  ,0  ,0  ,0  ,"98,352  ","520,864  ",0  ,"133,479  "
+,,,,,,,,,,
+Mechanical & Electrical  
+"A/C Split System,  2.5 Ton-Fitness Center  ",0  ,0  ,0  ,0  ,0  ,"5,443  ",0  ,0  ,0  ,0  
+"A/C Split System,  3.5 Ton-Bldg 1 Lobby/Office  ",0  ,0  ,0  ,"6,484  ",0  ,0  ,0  ,0  ,0  ,0  
+"A/C Split System, Mini-Bldg 2 Elevator Equipment Rm  ",0  ,0  ,"4,390  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+"A/C Split System, Mini-Bldg 2 Lobby  ",0  ,0  ,"4,390  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+"A/C Wall Unit, 1 Ton-Bldg 1 Elevator Machine Rm  ",0  ,"2,629  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,"3,330  "
+Domestic Water Pump System Control Panel-Bldg 1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Domestic Water Pump System Control Panel-Bldg 2  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Domestic Water Pump/Motor,  5 Hp-Bldg 1  ","2,633  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,"3,335  ",0  
+"Domestic Water Pump/Motor,  5 Hp-Bldg 1  ","2,633  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,"3,335  ",0  
+"Domestic Water Pump/Motor,  5 Hp-Bldg 2  ","2,633  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,"3,335  ",0  
+"Domestic Water Pump/Motor,  5 Hp-Bldg 2  ","2,633  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,"3,335  ",0  
+Electrical Capital Repair/Replacement Allowance  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"130,477  "
+Fire Alarm System-Bldg 1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Fire Alarm System-Bldg 2  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Fire Jockey Pump-Bldg 1  ,0  ,"3,901  ",0  ,0  ,0  ,0  ,0  ,0  ,"4,797  ",0  
+Fire Jockey Pump-Bldg 2  ,0  ,0  ,0  ,0  ,0  ,0  ,"4,522  ",0  ,0  ,0  
+"Fire Pump, 50 Hp Electric-Bldg 2  ",0  ,0  ,0  ,"48,844  ",0  ,0  ,0  ,0  ,0  ,0  
+"Fire Pump, 60 Hp Electric-Bldg 1  ",0  ,0  ,0  ,0  ,0  ,"74,025  ",0  ,0  ,0  ,0  
+Fire Sprinkler Lines-Bldg 1 Garage  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Fire Sprinkler Lines-Bldg 2 Garage  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Generator, Diesel, 100 KW-Bldg 2 Garage  ",0  ,"46,818  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Generator, Diesel, 250 KW w/ATS-Bldg 1 Garage  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Lighting-Common Walkways (Mat $ only)  ,0  ,0  ,0  ,0  ,0  ,"7,416  ",0  ,0  ,0  ,0  

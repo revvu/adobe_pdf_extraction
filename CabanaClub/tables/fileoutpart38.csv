@@ -1,0 +1,27 @@
+﻿ed  Description  ,Year 21 2041  ,Year 22 2042  ,Year 23 2043  ,Year 24 2044  ,Year 25 2045  ,Year 26 2046  ,Year 27 2047  ,Year 28 2048  ,Year 29 2049  ,Year 30 2050  
+Roofs  
+"Roof, Modified Membrane-Bldg 1  ",0  ,0  ,0  ,0  ,0  ,0  ,"60,626  ",0  ,0  ,0  
+"Roof, Modified Membrane-Bldg 2  ",0  ,0  ,0  ,0  ,0  ,0  ,"26,524  ",0  ,0  ,0  
+Roof Coating-Flat Sections at AC Units  ,0  ,"11,534  ",0  ,0  ,"12,603  ",0  ,0  ,"13,772  ",0  ,0  
+"Roof, Modified Membrane-Fitness Center  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Roof, Pre-Patina Copper Standing Seam-Bldg 1  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+"Roof, Pre-Patina Copper Standing Seam-Bldg 2  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Roofs Total  ,0  ,"11,534  ",0  ,0  ,"12,603  ",0  ,"87,150  ","13,772  ",0  ,0  
+,,,,,,,,,,
+Painting/Waterproofing  
+Paint Exterior and Waterproof-Bldg 1  ,0  ,0  ,0  ,0  ,0  ,"423,153  ",0  ,0  ,0  ,0  
+Paint Exterior and Waterproof-Bldg 2  ,0  ,0  ,0  ,0  ,0  ,"149,914  ",0  ,0  ,0  ,0  
+Paint Fire Sprinkler Piping-Garages  ,"45,695  ",0  ,"48,477  ",0  ,"51,430  ",0  ,"54,562  ",0  ,"57,885  ",0  
+Paint Interior-Bldg 1 Garage  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"97,427  "
+Paint Interior-Bldg 1 Lobby/Corridor/Office  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"8,525  ",0  ,0  
+Paint Interior-Bldg 2 Garage  ,0  ,"42,430  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Paint Interior-Bldg 2 Lobby  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"2,517  ",0  ,0  
+Paint Interior-Fitness Center  ,0  ,"2,993  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  
+Paint Interior-Stairwells  ,0  ,0  ,"19,820  ",0  ,0  ,0  ,0  ,0  ,0  ,0  
+Waterproof/Seal Brick-Elevator Towers  ,0  ,0  ,0  ,0  ,0  ,"69,723  ",0  ,0  ,0  ,0  
+Painting/Waterproofing Total  ,"45,695  ","45,423  ","68,297  ",0  ,"51,430  ","642,790  ","54,562  ","11,042  ","57,885  ","97,427  "
+,,,,,,,,,,
+Paving  
+"Asphalt Overlay, 1"" w/Milling Allowance  ",0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,"93,126  ",0  
+Asphalt Sealcoating  ,0  ,"7,292  ",0  ,0  ,0  ,"8,208  ",0  ,0  ,0  ,"9,238  "
+Paving Total  ,0  ,"7,292  ",0  ,0  ,0  ,"8,208  ",0  ,0  ,"93,126  ","9,238  "
