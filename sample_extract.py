@@ -31,37 +31,49 @@ logging.basicConfig(level=logging.INFO)
 class ExtractTextInfoFromPDF:
     def __init__(self):
         try:
-            # Load PDF file
-            with open('./CabanaClub.pdf', 'rb') as file:
-                input_stream = file.read()
+            # Stage 1: Load PDF file
+            input_stream = self._load_pdf_file()
             
-            # Initialize PDF Services client
-            credentials = ServicePrincipalCredentials(
-                client_id=os.getenv('PDF_SERVICES_CLIENT_ID'),
-                client_secret=os.getenv('PDF_SERVICES_CLIENT_SECRET')
-            )
-            pdf_services = PDFServices(credentials=credentials)
+            # Stage 2: Initialize PDF Services client
+            pdf_services = self._initialize_pdf_services()
             
-            # Upload PDF to Adobe services
-            input_asset = pdf_services.upload(input_stream=input_stream, mime_type=PDFServicesMediaType.PDF)
+            # Stage 3: Upload PDF to Adobe services
+            input_asset = self._upload_pdf(pdf_services, input_stream)
             
-            # Create and submit extraction job
+            # Stage 4: Create and submit extraction job
             pdf_services_response = self._execute_extraction_job(pdf_services, input_asset)
             
-            # Download extraction results
+            # Stage 5: Download extraction results
             output_file_path = self._download_results(pdf_services, pdf_services_response)
             
-            # Process extracted data
+            # Stage 6: Process extracted data
             self._process_extracted_data(output_file_path)
 
         except (ServiceApiException, ServiceUsageException, SdkException) as e:
             logging.exception(f'Exception encountered while executing operation: {e}')
 
+    def _load_pdf_file(self) -> bytes:
+        """Stage 1: Load PDF file from disk."""
+        with open('./extractPdfInput.pdf', 'rb') as file:
+            return file.read()
+
+    def _initialize_pdf_services(self) -> PDFServices:
+        """Stage 2: Initialize PDF Services client with credentials."""
+        credentials = ServicePrincipalCredentials(
+            client_id=os.getenv('PDF_SERVICES_CLIENT_ID'),
+            client_secret=os.getenv('PDF_SERVICES_CLIENT_SECRET')
+        )
+        return PDFServices(credentials=credentials)
+
+    def _upload_pdf(self, pdf_services: PDFServices, input_stream: bytes):
+        """Stage 3: Upload PDF to Adobe cloud services."""
+        return pdf_services.upload(input_stream=input_stream, mime_type=PDFServicesMediaType.PDF)
+
     def _execute_extraction_job(self, pdf_services: PDFServices, input_asset):
         """Stage 4: Create and submit extraction job, then wait for results."""
         # Create parameters for the job
         extract_pdf_params = ExtractPDFParams(
-            elements_to_extract=[ExtractElementType.TEXT, ExtractElementType.TABLES],
+            elements_to_extract=[ExtractElementType.TEXT],
         )
 
         # Create and submit job
@@ -103,8 +115,8 @@ class ExtractTextInfoFromPDF:
     def create_output_file_path() -> str:
         now = datetime.now()
         time_stamp = now.strftime("%Y-%m-%dT%H-%M-%S")
-        os.makedirs("output/CabanaClub", exist_ok=True)
-        return f"output/CabanaClub/extract{time_stamp}.zip"
+        os.makedirs("sample_output/ExtractTextInfoFromPDF", exist_ok=True)
+        return f"sample_output/ExtractTextInfoFromPDF/extract{time_stamp}.zip"
 
 
 if __name__ == "__main__":
