@@ -6,16 +6,8 @@
       "title": "1. General Information",
       "page": 4,
       "attributes": {
-        "BBox": [
-          58.797599999999875,
-          562.0889999999781,
-          578.7359999999753,
-          672.6049999999814
-        ],
         "NumCol": 4,
-        "NumRow": 6,
-        "Placement": "Block",
-        "SpaceAfter": 12.875
+        "NumRow": 6
       },
       "header_row_count": 0,
       "rows": [
@@ -43,19 +35,8 @@
           "Total Units: 90",
           "Budget Year Begins:",
           "01/01/2021"
-        ],
-        [
-          "Phase: 1 of 1",
-          "Budget Year Ends:",
-          "12/31/2021"
         ]
-      ],
-      "truncated": {
-        "original_row_count": 6,
-        "original_column_count": 3,
-        "included_rows": 6,
-        "included_columns": 3
-      }
+      ]
     },
     {
       "table_index": 2,
@@ -63,16 +44,8 @@
       "title": "2. Report Findings",
       "page": 4,
       "attributes": {
-        "BBox": [
-          52.07789999999841,
-          392.1759999999922,
-          578.7359999999753,
-          502.4519999999902
-        ],
         "NumCol": 2,
-        "NumRow": 6,
-        "Placement": "Block",
-        "SpaceAfter": 12.875
+        "NumRow": 6
       },
       "header_row_count": 0,
       "rows": [
@@ -90,17 +63,8 @@
         ],
         [
           "Number of components scheduled for replacement in the 2021 budget year: 12"
-        ],
-        [
-          "Total cost of components scheduled for replacement in the 2021 budget year: $196,867"
         ]
-      ],
-      "truncated": {
-        "original_row_count": 6,
-        "original_column_count": 1,
-        "included_rows": 6,
-        "included_columns": 1
-      }
+      ]
     },
     {
       "table_index": 3,
@@ -108,16 +72,8 @@
       "title": "3. Straight Line Funding Plan",
       "page": 4,
       "attributes": {
-        "BBox": [
-          47.15809999999874,
-          263.4219999999914,
-          579.2159999999858,
-          332.05899999999383
-        ],
         "NumCol": 2,
-        "NumRow": 4,
-        "Placement": "Block",
-        "SpaceAfter": 12.875
+        "NumRow": 4
       },
       "header_row_count": 0,
       "rows": [
@@ -133,13 +89,7 @@
         [
           "% Difference between 2020 actual and 2021 recommended contribution amounts: 100.00%"
         ]
-      ],
-      "truncated": {
-        "original_row_count": 4,
-        "original_column_count": 1,
-        "included_rows": 4,
-        "included_columns": 1
-      }
+      ]
     },
     {
       "table_index": 4,
@@ -147,16 +97,8 @@
       "title": "4. 30 Year Pooled Cash Flow Funding Plan",
       "page": 4,
       "attributes": {
-        "BBox": [
-          48.71799999999894,
-          92.78849999999875,
-          579.2159999999858,
-          199.2239999999947
-        ],
         "NumCol": 2,
-        "NumRow": 6,
-        "Placement": "Block",
-        "SpaceAfter": 12.875
+        "NumRow": 6
       },
       "header_row_count": 0,
       "rows": [
@@ -174,17 +116,8 @@
         ],
         [
           "Difference between 2020 actual and 2021 recommended contribution amounts: $364,168"
-        ],
-        [
-          "% Difference between 2020 actual and 2021 recommended contribution amounts: 100.00%"
         ]
-      ],
-      "truncated": {
-        "original_row_count": 6,
-        "original_column_count": 1,
-        "included_rows": 6,
-        "included_columns": 1
-      }
+      ]
     },
     {
       "table_index": 5,
@@ -192,16 +125,8 @@
       "title": "Unit Abbreviations",
       "page": 12,
       "attributes": {
-        "BBox": [
-          56.997699999999895,
-          98.42819999999847,
-          325.42699999999604,
-          200.0639999999985
-        ],
         "NumCol": 2,
-        "NumRow": 5,
-        "Placement": "Block",
-        "SpaceAfter": 18
+        "NumRow": 5
       },
       "header_row_count": 0,
       "rows": [
@@ -220,13 +145,7 @@
         [
           "Kw - Kilowatts Pair - Pair"
         ]
-      ],
-      "truncated": {
-        "original_row_count": 5,
-        "original_column_count": 1,
-        "included_rows": 5,
-        "included_columns": 1
-      }
+      ]
     },
     {
       "table_index": 6,
@@ -234,16 +153,8 @@
       "title": "Section 3 Schedule",
       "page": 22,
       "attributes": {
-        "BBox": [
-          22.199099999999817,
-          333.9789999999921,
-          589.7759999999835,
-          684.3639999999723
-        ],
         "NumCol": 7,
-        "NumRow": 10,
-        "Placement": "Block",
-        "SpaceAfter": 18
+        "NumRow": 10
       },
       "header_row_count": 1,
       "rows": [
@@ -253,7 +164,8 @@
           "Component Useful Life",
           "Remg Life",
           "12/31/2020 Balance",
-          "Unfunded Balance"
+          "Unfunded Balance",
+          "2021 Contribution"
         ],
         [
           "Roofs 1,236,008",
@@ -261,7 +173,8 @@
           "1-13",
           "18,519",
           "1,217,489",
-          "128,111"
+          "128,111",
+          ""
         ],
         [
           "Painting/Waterproofing 413,375",
@@ -269,7 +182,8 @@
           "1-10",
           "52,870",
           "360,505",
-          "68,553"
+          "68,553",
+          ""
         ],
         [
           "Paving 44,623",
@@ -277,7 +191,8 @@
           "2-9",
           "3,920",
           "40,703",
-          "4,523"
+          "4,523",
+          ""
         ],
         [
           "Elevators 608,178",
@@ -285,7 +200,8 @@
           "7-10",
           "0",
           "608,178",
-          "74,936"
+          "74,936",
+          ""
         ],
         [
           "Mechanical & Electrical 1,010,962",
@@ -293,15 +209,10 @@
           "1-38",
           "64,847",
           "946,115",
-          "142,174"
+          "142,174",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 10,
-        "original_column_count": 7,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 7,
@@ -310,14 +221,16 @@
       "page": 23,
       "attributes": {
         "NumCol": 10,
-        "NumRow": 65,
-        "Placement": "Block",
-        "SpaceAfter": 18
+        "NumRow": 65
       },
       "header_row_count": 0,
       "rows": [
         [
           "Straight Line Component Schedule",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -330,10 +243,18 @@
           "Units",
           "Cost Per Unit",
           "Current Cost",
-          "Useful Life"
+          "Useful Life",
+          "Remg Life",
+          "12/31/2020 Balance",
+          "Unfunded Balance",
+          "2021 Contribution"
         ],
         [
           "Roofs",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -346,7 +267,11 @@
           "1,757.00",
           "28,112",
           "24",
-          "3"
+          "3",
+          "8,570",
+          "19,542",
+          "6,514",
+          ""
         ],
         [
           "Roof, Modified Membrane-Bldg 2 7",
@@ -354,23 +279,13 @@
           "1,757.00",
           "12,299",
           "24",
-          "3"
-        ],
-        [
-          "Roof Coating-Flat Sections at AC Units 1",
-          "Lp Sm",
-          "6,200.00",
-          "6,200",
           "3",
-          "1"
+          "3,749",
+          "8,550",
+          "2,850",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 60,
-        "original_column_count": 10,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 8,
@@ -379,9 +294,7 @@
       "page": 25,
       "attributes": {
         "NumCol": 10,
-        "NumRow": 76,
-        "Placement": "Block",
-        "SpaceAfter": 7.25
+        "NumRow": 76
       },
       "header_row_count": 2,
       "rows": [
@@ -391,10 +304,18 @@
           "Units",
           "Cost Per Unit",
           "Current Cost",
-          "Useful Life"
+          "Useful Life",
+          "Remg Life",
+          "12/31/2020 Balance",
+          "Unfunded Balance",
+          "2021 Contribution"
         ],
         [
           "Mechanical & Electrical (Continued)",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -407,7 +328,11 @@
           "29.27",
           "3,220",
           "14",
-          "13"
+          "13",
+          "0",
+          "3,220",
+          "248",
+          ""
         ],
         [
           "Lighting-Stairwells (Mat $ only) 111",
@@ -415,7 +340,11 @@
           "39.97",
           "4,437",
           "14",
-          "10"
+          "10",
+          "0",
+          "4,437",
+          "444",
+          ""
         ],
         [
           "Plumbing Repiping Allowance 90",
@@ -423,7 +352,11 @@
           "5,000.00",
           "450,000",
           "40",
-          "5"
+          "5",
+          "0",
+          "450,000",
+          "90,000",
+          ""
         ],
         [
           "Mechanical & Electrical Total 26 Components",
@@ -431,15 +364,25 @@
           "7-45",
           "1-38",
           "64,847",
-          "946,115"
+          "946,115",
+          "142,174",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Misc Building Components",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 71,
-        "original_column_count": 10,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 9,
@@ -448,9 +391,7 @@
       "page": 28,
       "attributes": {
         "NumCol": 11,
-        "NumRow": 89,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 89
       },
       "header_row_count": 1,
       "rows": [
@@ -460,10 +401,20 @@
           "Year 2 2022",
           "Year 3 2023",
           "Year 4 2024",
-          "Year 5 2025"
+          "Year 5 2025",
+          "Year 6 2026",
+          "Year 7 2027",
+          "Year 8 2028",
+          "Year 9 2029",
+          "Year 10 2030"
         ],
         [
           "General Reserve Fund 1,219,798",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -476,11 +427,21 @@
           "821,569",
           "945,560",
           "1,285,330",
-          "825,294"
+          "825,294",
+          "1,138,384",
+          "Highest",
+          "",
+          "",
+          ""
         ],
         [
           "1,443,684",
           "1,612,417",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -492,7 +453,12 @@
           "386,346",
           "397,936",
           "409,874",
-          "422,170"
+          "422,170",
+          "434,835",
+          "447,880",
+          "461,316",
+          "475,150",
+          ""
         ],
         [
           "364,168",
@@ -500,15 +466,14 @@
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 84,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 10,
@@ -516,16 +481,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 31,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          61.70969999999943,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 37,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 37
       },
       "header_row_count": 2,
       "rows": [
@@ -535,10 +492,20 @@
           "Year 2 2022",
           "Year 3 2023",
           "Year 4 2024",
-          "Year 5 2025"
+          "Year 5 2025",
+          "Year 6 2026",
+          "Year 7 2027",
+          "Year 8 2028",
+          "Year 9 2029",
+          "Year 10 2030"
         ],
         [
           "Mechanical & Electrical (Continued)",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -551,7 +518,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Lighting-Stairwells (Mat $ only) 0",
@@ -559,7 +531,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "5,789",
+          ""
         ],
         [
           "Plumbing Repiping Allowance 0",
@@ -567,7 +544,12 @@
           "0",
           "0",
           "506,479",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Mechanical & Electrical Total 10,532",
@@ -575,15 +557,27 @@
           "8,780",
           "55,328",
           "506,479",
-          "86,884"
+          "86,884",
+          "4,522",
+          "0",
+          "18,137",
+          "139,596",
+          ""
+        ],
+        [
+          "Misc Building Components",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 35,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 11,
@@ -591,16 +585,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 32,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          648.36599999998,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 38,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 38
       },
       "header_row_count": 2,
       "rows": [
@@ -610,10 +596,20 @@
           "Year 2 2022",
           "Year 3 2023",
           "Year 4 2024",
-          "Year 5 2025"
+          "Year 5 2025",
+          "Year 6 2026",
+          "Year 7 2027",
+          "Year 8 2028",
+          "Year 9 2029",
+          "Year 10 2030"
         ],
         [
           "Misc Site Improvements",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -626,7 +622,12 @@
           "0",
           "0",
           "0",
-          "5,824"
+          "5,824",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Access Control, Gate Operator, Barrier 0",
@@ -634,7 +635,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Fence Gates, Alum Picket-Pool Deck 0",
@@ -642,7 +648,12 @@
           "7,292",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Fence, Alum Picket-Pool Deck West Side 0",
@@ -650,15 +661,27 @@
           "0",
           "18,169",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Fence, Vinyl, 6' Slat-Pool Deck East Side 0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "7,031",
+          "0",
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 36,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 12,
@@ -666,16 +689,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 33,
       "attributes": {
-        "BBox": [
-          28.07889999999952,
-          93.62839999999778,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 24,
-        "Placement": "Block",
-        "SpaceAfter": 11.25
+        "NumRow": 24
       },
       "header_row_count": 2,
       "rows": [
@@ -685,10 +700,20 @@
           "Year 12 2032",
           "Year 13 2033",
           "Year 14 2034",
-          "Year 15 2035"
+          "Year 15 2035",
+          "Year 16 2036",
+          "Year 17 2037",
+          "Year 18 2038",
+          "Year 19 2039",
+          "Year 20 2040"
         ],
         [
           "General Reserve Fund",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -701,6 +726,11 @@
           "",
           "",
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
           ""
         ],
         [
@@ -709,7 +739,12 @@
           "177,826",
           "320,543",
           "604,825",
-          "609,877"
+          "609,877",
+          "925,112",
+          "1,182,652",
+          "1,491,724",
+          "1,272,688",
+          ""
         ],
         [
           "Annual Reserve Contribution 338,076",
@@ -717,7 +752,12 @@
           "338,076",
           "338,076",
           "338,076",
-          "338,076"
+          "338,076",
+          "338,076",
+          "338,076",
+          "338,076",
+          "338,076",
+          ""
         ],
         [
           "Planned Special Assessments 0",
@@ -725,15 +765,27 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Reserve Funds Available 438,076",
+          "738,259",
+          "515,902",
+          "658,619",
+          "942,901",
+          "947,953",
+          "1,263,188",
+          "1,520,728",
+          "1,829,800",
+          "1,610,764",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 24,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 13,
@@ -741,16 +793,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 34,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          82.58889999999883,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 27,
-        "Placement": "Block",
-        "SpaceAfter": 11.25
+        "NumRow": 27
       },
       "header_row_count": 2,
       "rows": [
@@ -760,10 +804,20 @@
           "Year 12 2032",
           "Year 13 2033",
           "Year 14 2034",
-          "Year 15 2035"
+          "Year 15 2035",
+          "Year 16 2036",
+          "Year 17 2037",
+          "Year 18 2038",
+          "Year 19 2039",
+          "Year 20 2040"
         ],
         [
           "Roofs",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -776,7 +830,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Roof, Modified Membrane-Bldg 2 0",
@@ -784,7 +843,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Roof Coating-Flat Sections at AC Units 0",
@@ -792,7 +856,12 @@
           "8,840",
           "0",
           "0",
-          "9,659"
+          "9,659",
+          "0",
+          "0",
+          "10,555",
+          "0",
+          ""
         ],
         [
           "Roof, Modified Membrane-Fitness Center 0",
@@ -800,15 +869,27 @@
           "11,869",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Roof, Pre-Patina Copper Standing Seam-Bldg 1 0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 25,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 14,
@@ -816,16 +897,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 35,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          64.34959999999774,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 36,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 36
       },
       "header_row_count": 2,
       "rows": [
@@ -835,10 +908,20 @@
           "Year 12 2032",
           "Year 13 2033",
           "Year 14 2034",
-          "Year 15 2035"
+          "Year 15 2035",
+          "Year 16 2036",
+          "Year 17 2037",
+          "Year 18 2038",
+          "Year 19 2039",
+          "Year 20 2040"
         ],
         [
           "Elevators",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -851,7 +934,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Elevator Cab Refurbishment Allowance-Bldg 2 0",
@@ -859,7 +947,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Elevator Door Operator Equipment-Bldg 1 0",
@@ -867,7 +960,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Elevator Door Operator Equipment-Bldg 2 0",
@@ -875,15 +973,27 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Elevator Capital Repair/Deferred Maint Allowance 0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 34,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 15,
@@ -891,21 +1001,18 @@
       "title": "Pooled Cash Flow Plan",
       "page": 36,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          61.70969999999943,
-          589.7759999999835,
-          700.0839999999735
-        ],
         "NumCol": 11,
-        "NumRow": 38,
-        "Placement": "Block",
-        "SpaceAfter": 11.25
+        "NumRow": 38
       },
       "header_row_count": 0,
       "rows": [
         [
           "Pooled Cash Flow Plan",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -918,10 +1025,20 @@
           "Year 12 2032",
           "Year 13 2033",
           "Year 14 2034",
-          "Year 15 2035"
+          "Year 15 2035",
+          "Year 16 2036",
+          "Year 17 2037",
+          "Year 18 2038",
+          "Year 19 2039",
+          "Year 20 2040"
         ],
         [
           "Mechanical & Electrical (Continued)",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -934,7 +1051,12 @@
           "4,591",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Lighting-Stairwells (Mat $ only) 0",
@@ -942,23 +1064,14 @@
           "0",
           "0",
           "0",
-          "0"
-        ],
-        [
-          "Plumbing Repiping Allowance 0",
           "0",
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 36,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 16,
@@ -966,16 +1079,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 37,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          76.58909999999742,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 39,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 39
       },
       "header_row_count": 2,
       "rows": [
@@ -985,10 +1090,20 @@
           "Year 12 2032",
           "Year 13 2033",
           "Year 14 2034",
-          "Year 15 2035"
+          "Year 15 2035",
+          "Year 16 2036",
+          "Year 17 2037",
+          "Year 18 2038",
+          "Year 19 2039",
+          "Year 20 2040"
         ],
         [
           "Misc Site Improvements",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -1001,7 +1116,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "8,304",
+          "0",
+          "0",
+          ""
         ],
         [
           "Access Control, Gate Operator, Barrier 0",
@@ -1009,7 +1129,12 @@
           "0",
           "51,378",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Fence Gates, Alum Picket-Pool Deck 0",
@@ -1017,7 +1142,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "11,360",
+          "0",
+          "0",
+          ""
         ],
         [
           "Fence, Alum Picket-Pool Deck West Side 0",
@@ -1025,15 +1155,27 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Fence, Vinyl, 6' Slat-Pool Deck East Side 0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 36,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 17,
@@ -1041,16 +1183,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 38,
       "attributes": {
-        "BBox": [
-          28.07889999999952,
-          93.62839999999778,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 23,
-        "Placement": "Block",
-        "SpaceAfter": 11.25
+        "NumRow": 23
       },
       "header_row_count": 2,
       "rows": [
@@ -1060,10 +1194,20 @@
           "Year 22 2042",
           "Year 23 2043",
           "Year 24 2044",
-          "Year 25 2045"
+          "Year 25 2045",
+          "Year 26 2046",
+          "Year 27 2047",
+          "Year 28 2048",
+          "Year 29 2049",
+          "Year 30 2050"
         ],
         [
           "General Reserve Fund",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -1076,7 +1220,12 @@
           "202,813",
           "289,780",
           "607,234",
-          "656,013"
+          "656,013",
+          "185,462",
+          "300,366",
+          "568,805",
+          "529,846",
+          ""
         ],
         [
           "Annual Reserve Contribution 338,076",
@@ -1084,7 +1233,12 @@
           "338,076",
           "338,076",
           "338,076",
-          "338,076"
+          "338,076",
+          "338,076",
+          "338,076",
+          "338,076",
+          "338,076",
+          ""
         ],
         [
           "Planned Special Assessments 0",
@@ -1092,7 +1246,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Reserve Funds Available 1,471,753",
@@ -1100,15 +1259,27 @@
           "540,889",
           "627,856",
           "945,310",
-          "994,089"
+          "994,089",
+          "523,538",
+          "638,442",
+          "906,881",
+          "867,922",
+          ""
+        ],
+        [
+          "Expenditures",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 23,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 18,
@@ -1116,16 +1287,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 39,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          82.58889999999883,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 27,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 27
       },
       "header_row_count": 2,
       "rows": [
@@ -1135,10 +1298,20 @@
           "Year 22 2042",
           "Year 23 2043",
           "Year 24 2044",
-          "Year 25 2045"
+          "Year 25 2045",
+          "Year 26 2046",
+          "Year 27 2047",
+          "Year 28 2048",
+          "Year 29 2049",
+          "Year 30 2050"
         ],
         [
           "Roofs",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -1151,7 +1324,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "60,626",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Roof, Modified Membrane-Bldg 2 0",
@@ -1159,7 +1337,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "26,524",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Roof Coating-Flat Sections at AC Units 0",
@@ -1167,7 +1350,12 @@
           "0",
           "0",
           "12,603",
-          "0"
+          "0",
+          "0",
+          "13,772",
+          "0",
+          "0",
+          ""
         ],
         [
           "Roof, Modified Membrane-Fitness Center 0",
@@ -1175,15 +1363,27 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Roof, Pre-Patina Copper Standing Seam-Bldg 1 0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 25,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 19,
@@ -1191,16 +1391,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 40,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          64.34959999999774,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 36,
-        "Placement": "Block",
-        "SpaceAfter": 11.25
+        "NumRow": 36
       },
       "header_row_count": 2,
       "rows": [
@@ -1210,10 +1402,20 @@
           "Year 22 2042",
           "Year 23 2043",
           "Year 24 2044",
-          "Year 25 2045"
+          "Year 25 2045",
+          "Year 26 2046",
+          "Year 27 2047",
+          "Year 28 2048",
+          "Year 29 2049",
+          "Year 30 2050"
         ],
         [
           "Elevators",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -1226,7 +1428,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "61,742",
+          ""
         ],
         [
           "Elevator Cab Refurbishment Allowance-Bldg 2 0",
@@ -1234,7 +1441,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "30,871",
+          ""
         ],
         [
           "Elevator Door Operator Equipment-Bldg 1 99,177",
@@ -1242,7 +1454,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Elevator Door Operator Equipment-Bldg 2 49,589",
@@ -1250,15 +1467,27 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Elevator Capital Repair/Deferred Maint Allowance 0",
+          "0",
+          "0",
+          "0",
+          "128,066",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 34,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 20,
@@ -1266,16 +1495,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 41,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          61.70969999999943,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 37,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 37
       },
       "header_row_count": 2,
       "rows": [
@@ -1285,10 +1506,20 @@
           "Year 22 2042",
           "Year 23 2043",
           "Year 24 2044",
-          "Year 25 2045"
+          "Year 25 2045",
+          "Year 26 2046",
+          "Year 27 2047",
+          "Year 28 2048",
+          "Year 29 2049",
+          "Year 30 2050"
         ],
         [
           "Mechanical & Electrical (Continued)",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -1301,7 +1532,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "6,944",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Lighting-Stairwells (Mat $ only) 0",
@@ -1309,7 +1545,12 @@
           "0",
           "8,757",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Plumbing Repiping Allowance 0",
@@ -1317,7 +1558,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Mechanical & Electrical Total 6,840",
@@ -1325,15 +1571,27 @@
           "23,114",
           "20,468",
           "21,408",
-          "15,173"
+          "15,173",
+          "6,944",
+          "8,412",
+          "0",
+          "8,924",
+          ""
+        ],
+        [
+          "Misc Building Components",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 35,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     },
     {
       "table_index": 21,
@@ -1341,16 +1599,8 @@
       "title": "Pooled Cash Flow Plan",
       "page": 42,
       "attributes": {
-        "BBox": [
-          22.4390999999996,
-          76.58909999999742,
-          589.7759999999835,
-          684.4839999999967
-        ],
         "NumCol": 11,
-        "NumRow": 38,
-        "Placement": "Block",
-        "SpaceAfter": 8.375
+        "NumRow": 38
       },
       "header_row_count": 2,
       "rows": [
@@ -1360,10 +1610,20 @@
           "Year 22 2042",
           "Year 23 2043",
           "Year 24 2044",
-          "Year 25 2045"
+          "Year 25 2045",
+          "Year 26 2046",
+          "Year 27 2047",
+          "Year 28 2048",
+          "Year 29 2049",
+          "Year 30 2050"
         ],
         [
           "Misc Site Improvements",
+          "",
+          "",
+          "",
+          "",
+          "",
           "",
           "",
           "",
@@ -1376,7 +1636,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "11,839",
+          ""
         ],
         [
           "Access Control, Gate Operator, Barrier 0",
@@ -1384,7 +1649,12 @@
           "0",
           "0",
           "0",
-          "73,253"
+          "73,253",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Fence Gates, Alum Picket-Pool Deck 0",
@@ -1392,7 +1662,12 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ],
         [
           "Fence, Alum Picket-Pool Deck West Side 0",
@@ -1400,15 +1675,27 @@
           "0",
           "0",
           "0",
-          "0"
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Fence, Vinyl, 6' Slat-Pool Deck East Side 0",
+          "0",
+          "10,954",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          ""
         ]
-      ],
-      "truncated": {
-        "original_row_count": 36,
-        "original_column_count": 11,
-        "included_rows": 6,
-        "included_columns": 6
-      }
+      ]
     }
   ]
 }

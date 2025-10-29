@@ -7,14 +7,9 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 ZIP_PATH = "output/CabanaClub/extract2025-10-29T11-41-17.zip"
-# Clamp generated column widths so very long values wrap while tiny columns stay readable.
-MAX_COL_WIDTH = 36
-MIN_COL_WIDTH = 3
-OUTPUT_MODE = "json"  # Options: "pretty", "json", "both"
+OUTPUT_MODE = "pretty"  # Options: "pretty", "json", "both"
 JSON_OUTPUT_PATH = Path("tables.json")
 JSON_SAMPLE_OUTPUT_PATH = Path("tables_sample.json")
-SAMPLE_MAX_ROWS = 6
-SAMPLE_MAX_COLS = 6
 
 
 def load_structured_data(zip_path: str) -> Dict:
@@ -202,7 +197,7 @@ def compute_column_widths(rows: List[List[str]]) -> List[int]:
         return []
 
     num_cols = max(len(row) for row in rows)
-    widths = [MIN_COL_WIDTH] * num_cols
+    widths = [3] * num_cols
 
     for col_idx in range(num_cols):
         longest = 0
@@ -214,7 +209,7 @@ def compute_column_widths(rows: List[List[str]]) -> List[int]:
                 continue
             for line in cell.splitlines():
                 longest = max(longest, len(line))
-        widths[col_idx] = max(MIN_COL_WIDTH, min(longest, MAX_COL_WIDTH))
+        widths[col_idx] = max(3, min(longest, 36))
 
     return widths
 
@@ -314,22 +309,29 @@ def export_tables_sample_json(tables: List[Dict], output_path: Path) -> None:
     for idx, table in enumerate(tables, start=1):
         title = table.get("title") or f"Table {idx}"
         rows, header_rows = assemble_rows(table)
-        preview_rows = truncate_rows(rows, SAMPLE_MAX_ROWS, SAMPLE_MAX_COLS)
+        preview_rows = []
+        if rows:
+            header_rows = max(header_rows, 0)
+            header_part = rows[:header_rows]
+            data_part = rows[header_rows : header_rows + 5]
+            preview_rows = header_part + data_part
+
+        attributes = table.get("attributes", {})
+        sample_attributes = {
+            key: attributes[key]
+            for key in ("NumCol", "NumRow")
+            if key in attributes
+        }
+
         payload["tables"].append(
             {
                 "table_index": idx,
                 "table_id": table.get("id"),
                 "title": title,
                 "page": table.get("page"),
-                "attributes": table.get("attributes", {}),
-                "header_row_count": min(header_rows, len(preview_rows)),
+                "attributes": sample_attributes,
+                "header_row_count": header_rows,
                 "rows": preview_rows,
-                "truncated": {
-                    "original_row_count": len(rows),
-                    "original_column_count": max((len(r) for r in rows), default=0),
-                    "included_rows": len(preview_rows),
-                    "included_columns": max((len(r) for r in preview_rows), default=0),
-                },
             }
         )
     output_path.write_text(json.dumps(payload, indent=2))
