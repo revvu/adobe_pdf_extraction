@@ -64,10 +64,10 @@ class ExtractTextInfoFromPDF:
         # Create parameters for the job
         extract_pdf_params = ExtractPDFParams(
             elements_to_extract=[ExtractElementType.TEXT, ExtractElementType.TABLES],
-            elements_to_extract_renditions=[ExtractRenditionsElementType.TABLES],
+            # elements_to_extract_renditions=[ExtractRenditionsElementType.TABLES],
             add_char_info=False,
             styling_info=False,
-            table_structure_type=TableStructureType.CSV,
+            # table_structure_type=TableStructureType.CSV,
         )
 
         # Create and submit job

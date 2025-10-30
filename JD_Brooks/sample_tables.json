@@ -1,0 +1,324 @@
+{
+  "tables": [
+    {
+      "table_index": 1,
+      "title": "ASSOCIATION INFORMATION:",
+      "page": 2,
+      "attributes": {
+        "NumCol": 5,
+        "NumRow": 15
+      },
+      "rows": [
+        [
+          "Name of Association:",
+          "MOUNTAIN GLEN II HOA",
+          "",
+          ""
+        ],
+        [
+          "Location:",
+          "SYLMAR, CA",
+          "",
+          ""
+        ],
+        [
+          "Number of Units:",
+          "317",
+          "",
+          ""
+        ],
+        [
+          "Approximate Age of Complex:",
+          "16",
+          "",
+          ""
+        ],
+        [
+          "This report recommends contributions for Budget Year:",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_index": 2,
+      "title": "RESERVE CONTRIBUTION MODELS:",
+      "page": 2,
+      "attributes": {
+        "NumCol": 4,
+        "NumRow": 5
+      },
+      "rows": [
+        [
+          "2017J.D. Brooks Recommendation in Box Annual",
+          "Monthly",
+          "Monthly Per Unit",
+          ""
+        ],
+        [
+          "2017 Straight-Line Contribution:",
+          "$124,382",
+          "$10,365",
+          "$32.70"
+        ],
+        [
+          "2017 Deficit Reduction Contribution:",
+          "$124,382",
+          "$10,365",
+          "$32.70"
+        ],
+        [
+          "2017 Cash-Flow (Minimum) Contribution:",
+          "$87,994",
+          "$7,333",
+          "$23.13"
+        ]
+      ]
+    },
+    {
+      "table_index": 3,
+      "title": "RESERVE CONTRIBUTION MODELS:",
+      "page": 5,
+      "attributes": {
+        "NumCol": 11,
+        "NumRow": 37
+      },
+      "rows": [
+        [
+          "MOUNTAIN GLEN II HOA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "RESERVE COMPONENT INVENTORY I",
+          "CURRENT",
+          "FISCAL YEAR END: NUMBER OF UNITS:",
+          "DECEMBER 31, 2016 317",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CATEGORY RESERVE COMPONENT",
+          "QUANTITY",
+          "TYPE UNIT",
+          "UNIT CosT",
+          "REPAIR / REPLACE COST",
+          "USEFUL LIFE",
+          "RMNG. LIFE",
+          "STRAIGHT-LINE ANNUAL CONTRIBUTION",
+          "@F.Y.E.2016 IDEAL BALANCE",
+          "PROJECTED BALANCE @F.Y.E.2016",
+          "SURPLUS"
+        ],
+        [
+          "ROOFING (POOL CABANA)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "TILE UNDERLAYMENT",
+          "500",
+          "SQFT",
+          "6.10",
+          "3,050",
+          "30",
+          "15",
+          "102",
+          "1,627",
+          "1,627",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_index": 4,
+      "title": "RESERVE CONTRIBUTION MODELS:",
+      "page": 7,
+      "attributes": {
+        "NumCol": 37,
+        "NumRow": 28
+      },
+      "rows": [
+        [
+          "1 9 7/27/2016 RESERVE COMPONENT INVENTORY I CATEGORY 16 17 18 RESERVE COMPONENT 2032 2033 2034 2035",
+          "MOUNTAIN PROJECTED",
+          "GLEN ANNUAL 23 2039",
+          "24 II 2040",
+          "HOA RESERVE EXPENSES 25 26 27 28 29 30 2041 2042 2043 2044 2045 2046",
+          "",
+          "",
+          ""
+        ],
+        [
+          "20 2036 2,675",
+          "THIRTY-YEAR",
+          "65,780 21 2037",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "22 2038",
+          "3,260 3,586",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ROOFING (POOL CABANA) TILE UNDERLAYMENT",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "PAINTING",
+          "59,579",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_index": 5,
+      "title": "RESERVE CONTRIBUTION MODELS:",
+      "page": 8,
+      "attributes": {
+        "NumCol": 11,
+        "NumRow": 38
+      },
+      "rows": [
+        [
+          "MOUNTAIN GLEN II HOA RESERVE COMPONENT CURRENT FISCAL YEAR END: DECEMBER 31, 2016 INVENTORY NUMBER OF UNITS; 317 I",
+          "SURPLUS",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "CATEGORY RESERVE COMPONENT",
+          "QUANTITY",
+          "TYPE UNIT",
+          "UNIT CosT",
+          "REPAIR / REPLACE COST",
+          "USEFUL LIFE",
+          "RMNG. LIFE",
+          "STRAIGHT-LINE ANNUAL CONTRIBUTION",
+          "@F.Y.E.2016 IDEAL BALANCE",
+          "PROJECTED BALANCE @F.Y.E.2016"
+        ],
+        [
+          "POOL AREA",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "POOL PLASTER",
+          "1,800",
+          "SQFT",
+          "6.60",
+          "1 1,880",
+          "12",
+          "1",
+          "990",
+          "1 1,880",
+          "1 1,880"
+        ],
+        [
+          "POOL TILE / COPING",
+          "150",
+          "LNFT",
+          "28.60",
+          "4,290",
+          "25",
+          "10",
+          "172",
+          "2,746",
+          "2,746"
+        ],
+        [
+          "POOL HEATER",
+          "UNIT",
+          "3370",
+          "3,370",
+          "1 O",
+          "6",
+          "337",
+          "1,685",
+          "1,685",
+          ""
+        ],
+        [
+          "POOL FILTER",
+          "UNIT",
+          "1280",
+          "1,280",
+          "12",
+          "8",
+          "107",
+          "533",
+          "533",
+          ""
+        ],
+        [
+          "SPA PLASTER",
+          "ALLOW",
+          "3370",
+          "3,370",
+          "8",
+          "1",
+          "421",
+          "3,370",
+          "3,370",
+          ""
+        ]
+      ]
+    }
+  ]
+}

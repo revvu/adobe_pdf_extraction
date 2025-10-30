@@ -86,6 +86,7 @@ def extract_tables(elements: List[Dict]) -> List[Dict]:
                 "attributes": {},
                 "cells": defaultdict(lambda: defaultdict(list)),
                 "row_meta": defaultdict(lambda: {"has_th": False, "has_td": False}),
+                "column_order": defaultdict(dict),
             }
             table_order.append(table_root)
 
@@ -126,8 +127,13 @@ def extract_tables(elements: List[Dict]) -> List[Dict]:
         fragment = normalize_fragment(text)
         if not fragment:
             continue
+        column_order = table["column_order"][row_index]
+        cell_key = (col_type, col_index)
+        if cell_key not in column_order:
+            column_order[cell_key] = len(column_order) + 1
+        col_position = column_order[cell_key]
 
-        table["cells"][row_index][col_index].append(fragment)
+        table["cells"][row_index][col_position].append(fragment)
         row_meta = table["row_meta"][row_index]
         if col_type == "TH":
             row_meta["has_th"] = True
@@ -283,11 +289,9 @@ def export_tables_to_json(tables: List[Dict], output_path: Path) -> None:
         payload["tables"].append(
             {
                 "table_index": idx,
-                "table_id": table.get("id"),
                 "title": title,
                 "page": table.get("page"),
                 "attributes": table.get("attributes", {}),
-                "header_row_count": header_rows,
                 "rows": rows,
             }
         )
@@ -318,11 +322,9 @@ def export_tables_sample_json(tables: List[Dict], output_path: Path) -> None:
         payload["tables"].append(
             {
                 "table_index": idx,
-                "table_id": table.get("id"),
                 "title": title,
                 "page": table.get("page"),
                 "attributes": sample_attributes,
-                "header_row_count": header_rows,
                 "rows": preview_rows,
             }
         )
@@ -356,17 +358,15 @@ def main() -> None:
     if not zip_path.exists():
         raise FileNotFoundError(f"Expected extract.zip at {zip_path}. Run extract.py or adjust the directory.")
 
-    if text_output_path.exists():
-        text_output_path.unlink()
-
     data = load_structured_data(zip_path)
     tables = extract_tables(data["elements"])
     if not tables:
-        print("done")
+        text_output_path.parent.mkdir(parents=True, exist_ok=True)
+        text_output_path.write_text("No tables found in the structured data.\n", encoding="utf-8")
         return
+    write_tables_text(tables, text_output_path)
     export_tables_to_json(tables, json_output_path)
     export_tables_sample_json(tables, sample_output_path)
-    print("done")
 
 
 if __name__ == "__main__":
